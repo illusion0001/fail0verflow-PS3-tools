@@ -5,10 +5,8 @@ on: push
 jobs:
   build:
 
-    runs-on: windows-latest
+    runs-on: ubuntu-latest
 
     steps:
     - uses: actions/checkout@v3
-    - run: |
-        make all
-        ls *.exe
+    - run: make all
