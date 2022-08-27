@@ -5,7 +5,7 @@ COMMON	=	tools.o aes.o sha1.o ec.o bn.o
 DEPS	=	Makefile tools.h types.h
 
 CC	=	gcc
-CFLAGS	=	-g -O2 -Wall -W
+CFLAGS	=	-g -O2 -Wall -W -static
 LDFLAGS =	-lz
 
 OBJS	= $(COMMON) $(addsuffix .o, $(TOOLS))
